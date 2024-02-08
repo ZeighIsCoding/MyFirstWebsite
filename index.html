@@ -12,10 +12,18 @@
             width: 60%;
             padding: 10px;
           }
+        div{
+            resize: both;
+            overflow: auto;
+        }
+        #grad1 {
+  background-image: linear-gradient(to right, rgb(67, 1, 99), darkslateblue);
+        }  
         </style>
     </head>
 
     <body style="background-color:darkslateblue;">
+    <div id="grad1">
 
 <h1> My First HTML Page </h1>
 <p> By: Zeigh Sheikh </p>
@@ -63,9 +71,33 @@
 
 <form>
 
-    
+    <label for="cname">Class Name: </label>
+    <input type="text" id="cname" name="cname"><br>
+    <label for="tname">Teacher Name: </label>
+    <input type="text" id="tname" name="tname"><br>
 </form>
 
+<form>
+    
+<label for="subject">Choose a Subject: </label>
+<select id="subject" name="subject">
+    <option value="eng">English</option>
+    <option value="mafs">Math</option>
+    <option value="compsci">Comp Sci</option>
+    <option value="supspy">Super Secret Spy Class</option>
+</select>
+
+</form>
+<hr>
+
+<button onclick="alert(new Date())">PRESS ME FOR A SURPRISE HEHE</button>
+<hr>
+
+<audio controls autoplay>
+    <source src="phantomLiberty.mp3" type="audio/mpeg">
+</audio>
+
+    </div>
     </body>
 
 </html>
